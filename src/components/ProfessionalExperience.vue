@@ -10,7 +10,7 @@ const { isMobileDisplay } = useMisc()
 
     <div class="mt-6">
         <div v-if="isMobileDisplay()">
-            <div class="mb-8" v-for="n in 3" :key="n">
+            <div class="mb-8" v-for="n in 4" :key="n">
                 <v-row>
                     <v-col :cols="6" class="pa-0 pb-2">
                         <v-chip color="primary">{{ $t(`professionalExperiences.${n}.date`) }}</v-chip>
@@ -28,7 +28,7 @@ const { isMobileDisplay } = useMisc()
             </div>
         </div>
         <v-timeline side="end" v-else>
-            <v-timeline-item dot-color="contrast" v-for="n in 3"  :key="n">
+            <v-timeline-item dot-color="contrast" v-for="n in 4"  :key="n">
                 <template v-slot:opposite>
                     <v-chip color="primary">{{ $t(`professionalExperiences.${n}.date`) }}</v-chip>
                 </template>
