@@ -71,24 +71,30 @@ export default {
     professionalExperiences: {
         title:'Experience professionnelle',
        1:{
-           date:'2024 - aujourd\'hui',
+           date:'2025 - aujourd\'hui',
+           title: 'Developpeur Fullstack',
+           location: 'Ypsium - Carcassonne',
+           information: 'Développement d\'outils SAAS pour le transport routier et gestion d\'infrastructures web, MCO projets legacy : VueJs, Symfony'
+       },
+       2:{
+           date:'2024 - 2025',
            title: 'Developpeur Fullstack',
            location: 'Kalisio - Castelnaudary (full remote)',
            information: 'Developpement d\'application Web cartographique basé sur un framework interne : FeathersJs, VueJs/Quasar, MongoDb'
        },
-       2:{
+       3:{
            date:'2023 - 2024',
            title: 'Developpeur Fullstack',
            location: 'Internet Factory - Guyancourt (full remote)',
            information: 'Conception developpement d\'application métier SEO, MCO d\'application web, prototypage projet interne en Python, PHP Symfony et VueJs'
        },
-       3:{
+       4:{
            date:'2014 - 2023',
            title: 'Developpeur Fullstack',
            location: 'Aldeis Yooda - Vendargues',
            information: 'Développement d\'application web (microservices, frontend, infrastructure) en PHP Symfony et VueJs Scrap / Data mining et gestion BDD (MariaDb, PostgreSql, Cassandra)'
        },
-       4:{
+       5:{
            date:'2009 - 2014',
            title: 'Developpeur Backend',
            location: 'Adapt Informatique - Juvignac',
@@ -123,9 +129,9 @@ export default {
             information: 'Bénédiction de site web'
         },
         3:{
-            url:'https://insight.yooda.com',
-            name: 'yooda insight',
-            information: 'Outil de suivi de référencement'
+            url:'https://alcoves-et-dragons.fr',
+            name: 'Alcôves & Dragons',
+            information: 'Outil de gestion de session DnD'
         },
     },
     interest: {

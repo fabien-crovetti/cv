@@ -70,25 +70,31 @@ export default {
 
     professionalExperiences: {
         title:'Professional experience',
-        1:{
-            date:'2024 - today',
+       1:{
+           date:'2025 - today',
+           title: 'Fullstack Developer',
+           location: 'Ypsium - Carcassonne',
+           information: 'Development of SaaS tools for road transport and web infrastructure management, maintenance of legacy projects: VueJs, Symfony'
+       },
+        2:{
+            date:'2024 - 2025',
             title: 'Fullstack Developer',
             location: 'Kalisio - Castelnaudary (full remote)',
             information: 'Development of a cartographic web application based on an internal framework: FeathersJs, VueJs/Quasar, MongoDb'
         },
-        2:{
+        3:{
             date:'2023 - 2024',
             title: 'Fullstack Developer',
             location: 'Internet Factory - Guyancourt (full remote)',
             information: 'Design and development of SEO business applications, MCO of web applications, prototyping of internal projects in Python, PHP Symfony and VueJs'
         },
-        3:{
+        4:{
             date:'2014 - 2023',
             title: 'Fullstack Developer',
             location: 'Aldeis Yooda - Vendargues',
             information: 'Web application development (microservices, frontend, infrastructure) in PHP Symfony and VueJs Scrap / Data mining and BDD management (MariaDb, PostgreSql, Cassandra)'
         },
-        4:{
+        5:{
             date:'2009 - 2014',
             title: 'Backend Developer',
             location: 'Adapt Informatique - Juvignac',
@@ -123,9 +129,9 @@ export default {
             information: 'Website Blessing'
         },
         3:{
-            url:'https://insight.yooda.com',
-            name: 'yooda insight',
-            information: 'SEO tracking tool'
+            url:'https://alcoves-et-dragons.fr',
+            name: 'Alcôves & Dragons',
+            information: 'DnD sessions tool'
         },
     },
     interest: {
