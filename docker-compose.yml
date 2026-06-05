@@ -1,10 +1,10 @@
-version: "3.7"
 services:
-    cv_fabien_node:
-        container_name: cv_fabien_node
-        build: docker
-        volumes:
-            - .:/srv:rw
-        restart: always
-        ports:
-            - "8338:3000"
+  cv_fabien_node:
+    container_name: "cv_fabien_node"
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    volumes:
+      - .:/srv:rw
+    ports:
+      - "8101:3000"
