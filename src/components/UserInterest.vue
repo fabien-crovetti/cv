@@ -1,10 +1,6 @@
 <script setup>
 
 import { ref } from 'vue'
-import { useMisc } from '@/composables/misc';
-
-const { isMobileDisplay } = useMisc()
-
 
 const userInterest = ref([
     'mdi-motorbike',
@@ -18,17 +14,13 @@ const userInterest = ref([
 </script>
 
 <template>
-    <h4 class="text-h4 font-weight-bold mb-10" :class="isMobileDisplay() ? 'text-center' : ''">{{ $t('interest.title') }}</h4>
+    <h2 class="text-[34px] leading-10 tracking-[0.25px] font-bold mb-10 text-center md:text-left">{{ $t('interest.title') }}</h2>
 
-    <v-row>
-        <v-col :cols="12" :xl="4" :lg="4" :md="4" v-for="(interest, index) in userInterest" :key="index">
-            <p class="text-h6" :class="isMobileDisplay() ? 'mobile-list-container' : ''">
-                <v-icon color="secondary" :icon="interest" class="mr-4"/>{{ $t(`interest.item${index+1}`) }}
+    <div class="-m-3 flex flex-wrap">
+        <div class="w-full min-w-0 p-3 lg:w-1/3 md:w-1/3" v-for="(interest, index) in userInterest" :key="index">
+            <p class="text-xl font-medium leading-8 tracking-[0.15px] max-md:mx-auto max-md:w-[230px] max-md:max-w-full max-md:text-left">
+                <span aria-hidden="true"   :class="interest" class="mdi inline-flex align-middle text-2xl leading-none text-secondary mr-4" />{{ $t(`interest.item${index+1}`) }}
             </p>
-        </v-col>
-    </v-row>
+        </div>
+    </div>
 </template>
-
-<style scoped lang="scss">
-
-</style>

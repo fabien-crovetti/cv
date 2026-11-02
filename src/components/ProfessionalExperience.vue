@@ -1,47 +1,22 @@
-<script setup>
-
-import { useMisc } from '@/composables/misc';
-
-const { isMobileDisplay } = useMisc()
-</script>
-
 <template>
-    <h4 class="text-h4 font-weight-bold" :class="isMobileDisplay() ? 'text-center' : ''">{{ $t('professionalExperiences.title') }}</h4>
-
-    <div class="mt-6">
-        <div v-if="isMobileDisplay()">
-            <div class="mb-8" v-for="n in 5" :key="n">
-                <v-row>
-                    <v-col :cols="6" class="pa-0 pb-2">
-                        <v-chip color="primary">{{ $t(`professionalExperiences.${n}.date`) }}</v-chip>
-                    </v-col>
-                    <v-col :cols="6" class="text-right pa-0">
-                        <p class="text-h5">{{ $t(`professionalExperiences.${n}.title`) }}</p>
-                    </v-col>
-                    <v-col :cols="12" class="pa-0">
-                        <p class="text-body-1">{{ $t(`professionalExperiences.${n}.location`) }}</p>
-                    </v-col>
-                    <v-col :cols="12" class="pa-0">
-                        <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p>
-                    </v-col>
-                </v-row>
+    <h2 class="text-[34px] leading-10 tracking-[0.25px] font-bold text-center md:text-left">{{ $t('professionalExperiences.title') }}</h2>
+    <ol class="mt-6 md:py-6">
+        <li v-for="n in 5" :key="n" class="relative mb-8 grid grid-cols-2 md:mb-0 md:gap-x-6 md:pb-6 md:last:pb-0 md:grid-cols-[auto_38px_minmax(0,1fr)]">
+            <div class="pb-2 md:col-start-1 md:row-start-1 md:text-right"><span class="inline-flex min-h-8 items-center rounded-full bg-primary/12 px-3 text-sm text-primary">{{ $t(`professionalExperiences.${n}.date`) }}</span></div>
+            <div aria-hidden="true" class="relative hidden justify-center md:col-start-2 md:row-start-1 md:flex">
+                <span class="absolute -top-6 bottom-0 w-0.5 bg-black/12" />
+                <span class="relative flex size-[38px] shrink-0 items-center justify-center rounded-full bg-[#f5f5f5]">
+                    <span class="size-[30px] rounded-full bg-contrast" />
+                </span>
             </div>
-        </div>
-        <v-timeline side="end" v-else>
-            <v-timeline-item dot-color="contrast" v-for="n in 5"  :key="n">
-                <template v-slot:opposite>
-                    <v-chip color="primary">{{ $t(`professionalExperiences.${n}.date`) }}</v-chip>
-                </template>
-                <div>
-                    <p class="text-h5">{{ $t(`professionalExperiences.${n}.title`) }}</p>
-                    <p class="text-body-1">{{ $t(`professionalExperiences.${n}.location`) }}</p>
-                    <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p>
-                </div>
-            </v-timeline-item>
-        </v-timeline>
-    </div>
+            <h3 class="text-2xl leading-8 wrap-break-word text-right md:hidden">{{ $t(`professionalExperiences.${n}.title`) }}</h3>
+            <div class="col-span-2 md:hidden"><p class="text-base leading-6 tracking-[0.5px]">{{ $t(`professionalExperiences.${n}.location`) }}</p>
+                <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p></div>
+            <div class="hidden md:row-start-1 md:block md:col-start-3">
+                <h3 class="text-2xl leading-8 wrap-break-word">{{ $t(`professionalExperiences.${n}.title`) }}</h3>
+                <p class="text-base leading-6 tracking-[0.5px]">{{ $t(`professionalExperiences.${n}.location`) }}</p>
+                <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p>
+            </div>
+        </li>
+    </ol>
 </template>
-
-<style scoped lang="scss">
-
-</style>

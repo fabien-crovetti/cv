@@ -1,10 +1,6 @@
 <script setup>
 
 import {ref} from "vue";
-import { useMisc } from '@/composables/misc';
-
-const { isMobileDisplay } = useMisc()
-
 
 const portfolioImg = ref([
     new URL(`@/assets/portfolio01.png`, import.meta.url).href,
@@ -15,33 +11,23 @@ const portfolioImg = ref([
 </script>
 
 <template>
-    <h4 class="text-h4 font-weight-bold mb-10" :class="isMobileDisplay() ? 'text-center' : ''">{{ $t('portfolio.title') }}</h4>
+    <h2 class="text-[34px] leading-10 tracking-[0.25px] font-bold mb-10 text-center md:text-left">{{ $t('portfolio.title') }}</h2>
 
-    <v-row>
-        <v-col :cols="12" :xl="4" :lg="4" :md="4" v-for="n in 3"  :key="n">
-            <v-card class="mb-6">
-                <v-card-text class="pa-0">
-                    <a class="text-decoration-none text-primary font-weight-bold d-block"  :href="$t(`portfolio.${n}.url`)" target="_blank">
-                        <v-img
-                            max-height="320"
-                            cover
-                            :src="portfolioImg[n-1]"
-                            :alt="$t(`portfolio.${n}.name`)"
-                            :tile="$t(`portfolio.${n}.name`)"
-                        />
+    <div class="-m-3 flex flex-wrap">
+        <div class="w-full min-w-0 p-3 lg:w-1/3 md:w-1/3" v-for="n in 3"  :key="n">
+            <section class="overflow-hidden rounded bg-white shadow-card mb-6">
+                <div class="p-0">
+                    <a class="no-underline text-primary font-bold block"  :href="$t(`portfolio.${n}.url`)" target="_blank" rel="noopener noreferrer">
+                        <img class="block max-h-80 w-full object-cover" :src="portfolioImg[n-1]" :alt="$t(`portfolio.${n}.name`)" :title="$t(`portfolio.${n}.name`)" />
                     </a>
-                </v-card-text>
-                <v-card-item>
-                    <a class="text-decoration-none text-primary font-weight-bold d-block" :href="$t(`portfolio.${n}.url`)" target="_blank">{{ $t(`portfolio.${n}.name`) }}</a>
+                </div>
+                <div class="px-4 py-3">
+                    <a class="no-underline text-primary font-bold block" :href="$t(`portfolio.${n}.url`)" target="_blank" rel="noopener noreferrer">{{ $t(`portfolio.${n}.name`) }}</a>
                     <p>{{ $t(`portfolio.${n}.information`) }}</p>
-                    <v-divider class="my-2"/>
-                    <div v-html="$t(`portfolio.${n}.skills`)"/>
-                </v-card-item>
-            </v-card>
-        </v-col>
-    </v-row>
+                    <hr class="border-0 border-t border-black/12 my-2" />
+                    <div class="[&_ul]:list-disc [&_ul]:pl-4" v-html="$t(`portfolio.${n}.skills`)"/>
+                </div>
+            </section>
+        </div>
+    </div>
 </template>
-
-<style scoped lang="scss">
-
-</style>

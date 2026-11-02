@@ -1,9 +1,7 @@
 <script setup>
 
 import { ref } from "vue";
-import { useMisc } from '@/composables/misc';
 
-const { isMobileDisplay } = useMisc()
 const userCompetences = ref([
     {
         type:'framework',
@@ -45,31 +43,25 @@ const userCompetences = ref([
 
 ])
 
-
 </script>
 
 <template>
-    <div :class="isMobileDisplay() ? 'text-center' : ''">
-        <h4 class="text-h4 font-weight-bold mb-6">{{ $t('userCompetence.title') }}</h4>
+    <div class="text-center md:text-left">
+        <h2 class="text-[34px] leading-10 tracking-[0.25px] font-bold mb-6">{{ $t('userCompetence.title') }}</h2>
 
-        <v-row >
-            <v-col :cols="12" :xl="4" :lg="4" :md="4" :sm="index === 4 ? 12 : 6" v-for="(competence, index) in userCompetences" :key="index">
-                <h6 class="text-h6 mb-4">{{ $t(`userCompetence.${competence.type}.name`) }}</h6>
+        <div class="-m-3 flex flex-wrap">
+            <div class="w-full min-w-0 p-3 lg:w-1/3 md:w-1/3" v-for="(competence, index) in userCompetences" :key="index" :class="index === 4 ? 'sm:w-full md:w-1/3' : 'sm:w-1/2 md:w-1/3'">
+                <h3 class="text-xl font-medium leading-8 tracking-[0.15px] mb-4">{{ $t(`userCompetence.${competence.type}.name`) }}</h3>
                 <p
                     v-for="(item, itemIndex) in competence.items"
                     :key="itemIndex"
-                    class="mb-2"
-                    :class="isMobileDisplay() ? 'mobile-list-container' : ''"
+                    class="mb-2 max-md:mx-auto max-md:w-[230px] max-md:max-w-full max-md:text-left"
                 >
-                    <v-icon :icon="item.iconName" color="contrast" class="mr-3" v-if="item.iconName" />
+                    <span aria-hidden="true"  :class="item.iconName" class="mdi inline-flex align-middle text-2xl leading-none text-contrast mr-3" v-if="item.iconName"  />
                     <span>{{ $t(`userCompetence.${competence.type}.item${item.id}`) }}</span>
                 </p>
-            </v-col>
-        </v-row>
+            </div>
+        </div>
     </div>
 
 </template>
-
-<style scoped lang="scss">
-
-</style>

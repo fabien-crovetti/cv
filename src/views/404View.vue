@@ -1,11 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
-  <h1>404</h1>
+    <h1 class="text-[32px] font-bold">404</h1>
 </template>
-
-<style scoped lang="sass">
-
-</style>

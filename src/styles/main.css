@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #03bfc0;
+    --color-secondary: #f25170;
+    --color-contrast: #f1d194;
+    --font-sans: Roboto, sans-serif;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 960px;
+    --breakpoint-lg: 1280px;
+    --breakpoint-xl: 1920px;
+    --breakpoint-2xl: 2560px;
+    --shadow-card: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 1px 3px rgb(0 0 0 / 12%);
+}
+
+@layer base {
+    body {
+        background: url('../assets/background.png') left top / cover fixed;
+        font-family: var(--font-sans);
+        color: rgb(0 0 0 / 87%);
+    }
+    button { cursor: pointer; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+}

@@ -1,21 +1,26 @@
+# Mon CV
 
-## Mon CV
+CV bilingue construit avec Vue 3, Vue Router, Vue I18n, Tailwind CSS et Vite SSG.
 
-Cv Vue3 / vuetify project
+## Développement
 
-## Description
+```sh
+yarn install
+yarn dev
+```
 
-- Docker
-- Vue 3
-- Typescript
-- Vuetify
+Avec Docker : `docker compose up --build`, puis ouvrir http://localhost:8001.
 
-## Getting started
+## Production
 
+```sh
+yarn build
+yarn preview
+```
 
-### Run docker :
-``docker compose up --build``
+Vite SSG génère le contenu français du CV dans `dist/index.html`. La langue
+mémorisée sous `defaultLocale` est restaurée après l'hydratation Vue.
+Les routes `/` et la page 404 restent gérées par Vue Router.
 
-### Check in navigator :
-Go to :
-``http://localhost:8338``
+Le thème et les seuils responsive sont définis dans `src/styles/main.css`.
+Roboto et les icônes Material Design sont conservés pour la présentation.

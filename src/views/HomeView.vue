@@ -12,75 +12,67 @@ import UserEducation from "@/components/UserEducation.vue";
 import UserPortfolio from "@/components/UserPortfolio.vue";
 import UserInterest from "@/components/UserInterest.vue";
 
-
-
 </script>
 
 <template>
 
     <div class="mx-auto" style="max-width: 1400px">
-        <v-row>
+        <div class="-m-3 flex flex-wrap">
 
-            <v-col :cols="12" :xl="3" :lg="3" class="text-center">
+            <div class="w-full min-w-0 p-3 lg:w-1/4 text-center" >
                 <user-profile/>
-            </v-col>
+            </div>
 
-            <v-col :cols="12" :xl="9" :lg="9" >
-                <v-card>
-                    <v-card-text class="px-12">
+            <div class="w-full min-w-0 p-3 lg:w-3/4" >
+                <section class="rounded bg-white shadow-card">
+                    <div class="p-4 text-sm leading-[1.425] px-12">
 
                         <user-about/>
 
-                        <v-divider class="my-10"/>
+                        <hr class="border-0 border-t border-black/12 my-10" />
 
-                        <v-row>
-                            <v-col :cols="12" :xl="6" :lg="6" :md="6">
+                        <div class="-m-3 flex flex-wrap">
+                            <div class="w-full min-w-0 p-3 lg:w-1/2 md:w-1/2" >
                                 <personal-information/>
-                            </v-col>
-                            <v-col :cols="12" :xl="6" :lg="6" :md="6">
+                            </div>
+                            <div class="w-full min-w-0 p-3 lg:w-1/2 md:w-1/2" >
                                 <user-languages/>
-                            </v-col>
-                        </v-row>
+                            </div>
+                        </div>
 
-                        <v-divider class="my-10"/>
+                        <hr class="border-0 border-t border-black/12 my-10" />
 
                         <user-competences/>
 
-                    </v-card-text>
-                </v-card>
+                    </div>
+                </section>
 
-                <v-card class="mt-10">
-                    <v-card-text class="px-12">
+                <section class="rounded bg-white shadow-card mt-10">
+                    <div class="p-4 text-sm leading-[1.425] px-12">
 
                         <professional-experience/>
 
-                        <v-divider class="my-10"/>
+                        <hr class="border-0 border-t border-black/12 my-10" />
 
                         <user-education/>
 
-                    </v-card-text>
-                </v-card>
+                    </div>
+                </section>
 
-
-                <v-card class="mt-10 pb-10">
-                    <v-card-text class="px-12">
+                <section class="rounded bg-white shadow-card mt-10 pb-10">
+                    <div class="p-4 text-sm leading-[1.425] px-12">
 
                         <user-portfolio/>
 
-                        <v-divider class="my-10"/>
+                        <hr class="border-0 border-t border-black/12 my-10" />
 
                        <user-interest/>
 
-                    </v-card-text>
-                </v-card>
+                    </div>
+                </section>
 
-            </v-col>
-        </v-row>
+            </div>
+        </div>
     </div>
 
-
 </template>
-
-<style scoped lang="scss">
-
-</style>
