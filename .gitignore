@@ -23,3 +23,6 @@ pnpm-debug.log*
 .agents
 .aws
 .codex
+# PDF generation environment
+.venv-pdf/
+__pycache__/

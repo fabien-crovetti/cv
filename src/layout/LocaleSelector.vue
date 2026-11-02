@@ -1,8 +1,11 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { ref, watch, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
+watch(locale, value => {
+    if (typeof document !== 'undefined') document.documentElement.lang = value === 'en-US' ? 'en' : 'fr'
+}, { immediate: true })
 const open = ref(false)
 const container = ref(null)
 const trigger = ref(null)

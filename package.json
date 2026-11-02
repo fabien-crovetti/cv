@@ -5,7 +5,9 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "pdf": "node scripts/pdf/generate.mjs",
+    "pdf:setup": "python3 -m venv --clear .venv-pdf && .venv-pdf/bin/python -m pip install -r scripts/pdf/requirements.txt"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",

@@ -14,8 +14,9 @@ export const createApp = ViteSSG(
         routes,
         base: import.meta.env.BASE_URL,
     },
-    ({ app, router, isClient }) => {
+    ({ app, router, isClient, head }) => {
         app.use(i18n)
+        if (!isClient) head.push({ htmlAttrs: { lang: 'fr' } })
 
         if (isClient) {
             app.mixin({

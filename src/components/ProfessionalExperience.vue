@@ -11,11 +11,15 @@
             </div>
             <h3 class="text-2xl leading-8 wrap-break-word text-right md:hidden">{{ $t(`professionalExperiences.${n}.title`) }}</h3>
             <div class="col-span-2 md:hidden"><p class="text-base leading-6 tracking-[0.5px]">{{ $t(`professionalExperiences.${n}.location`) }}</p>
-                <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p></div>
+                <ul class="mt-3 list-disc pl-5 space-y-2">
+                    <li v-for="(bullet, index) in $tm(`professionalExperiences.${n}.bullets`)" :key="index">{{ $rt(bullet) }}</li>
+                </ul></div>
             <div class="hidden md:row-start-1 md:block md:col-start-3">
                 <h3 class="text-2xl leading-8 wrap-break-word">{{ $t(`professionalExperiences.${n}.title`) }}</h3>
                 <p class="text-base leading-6 tracking-[0.5px]">{{ $t(`professionalExperiences.${n}.location`) }}</p>
-                <p class="mt-2">{{ $t(`professionalExperiences.${n}.information`) }}</p>
+                <ul class="mt-3 list-disc pl-5 space-y-2">
+                    <li v-for="(bullet, index) in $tm(`professionalExperiences.${n}.bullets`)" :key="index">{{ $rt(bullet) }}</li>
+                </ul>
             </div>
         </li>
     </ol>

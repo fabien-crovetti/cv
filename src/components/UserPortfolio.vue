@@ -14,11 +14,11 @@ const portfolioImg = ref([
     <h2 class="text-[34px] leading-10 tracking-[0.25px] font-bold mb-10 text-center md:text-left">{{ $t('portfolio.title') }}</h2>
 
     <div class="-m-3 flex flex-wrap">
-        <div class="w-full min-w-0 p-3 lg:w-1/3 md:w-1/3" v-for="n in 3"  :key="n">
+        <div class="w-full min-w-0 p-3 lg:w-1/3 md:w-1/3" v-for="n in [3, 1, 2]"  :key="n">
             <section class="overflow-hidden rounded bg-white shadow-card mb-6">
                 <div class="p-0">
                     <a class="no-underline text-primary font-bold block"  :href="$t(`portfolio.${n}.url`)" target="_blank" rel="noopener noreferrer">
-                        <img class="block max-h-80 w-full object-cover" :src="portfolioImg[n-1]" :alt="$t(`portfolio.${n}.name`)" :title="$t(`portfolio.${n}.name`)" />
+                        <img loading="lazy" decoding="async" class="block max-h-80 w-full object-cover" :src="portfolioImg[n-1]" :alt="$t(`portfolio.${n}.name`)" :title="$t(`portfolio.${n}.name`)" />
                     </a>
                 </div>
                 <div class="px-4 py-3">
