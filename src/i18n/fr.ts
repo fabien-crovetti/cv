@@ -70,68 +70,71 @@ export default {
     },
     professionalExperiences: {
         title:'Experience professionnelle',
-       1:{
-           date:'2025 - aujourd\'hui',
-           title: 'Developpeur Fullstack',
-           location: 'Ypsium - Carcassonne',
-           information: 'Développement d\'outils SAAS pour le transport routier et gestion d\'infrastructures web, MCO projets legacy : VueJs, Symfony'
-       },
-       2:{
-           date:'2024 - 2025',
-           title: 'Developpeur Fullstack',
-           location: 'Kalisio - Castelnaudary (full remote)',
-           information: 'Developpement d\'application Web cartographique basé sur un framework interne : FeathersJs, VueJs/Quasar, MongoDb'
-       },
-       3:{
-           date:'2023 - 2024',
-           title: 'Developpeur Fullstack',
-           location: 'Internet Factory - Guyancourt (full remote)',
-           information: 'Conception developpement d\'application métier SEO, MCO d\'application web, prototypage projet interne en Python, PHP Symfony et VueJs'
-       },
-       4:{
-           date:'2014 - 2023',
-           title: 'Developpeur Fullstack',
-           location: 'Aldeis Yooda - Vendargues',
-           information: 'Développement d\'application web (microservices, frontend, infrastructure) en PHP Symfony et VueJs Scrap / Data mining et gestion BDD (MariaDb, PostgreSql, Cassandra)'
-       },
-       5:{
-           date:'2009 - 2014',
-           title: 'Developpeur Backend',
-           location: 'Adapt Informatique - Juvignac',
-           information: 'Développement d\'application desktop / mobile en Windev, Maintenance et création d\'outils backoffice en PHP / JS'
-       }
+        1:{
+            date:'2025 - 2026',
+            title: 'Developpeur Fullstack',
+            location: 'Ypsium - Carcassonne',
+            information: 'Développement d\'outils SAAS pour le transport routier et gestion d\'infrastructures web, MCO projets legacy : VueJs, Symfony'
+        },
+        2:{
+            date:'2024 - 2025',
+            title: 'Developpeur Fullstack',
+            location: 'Kalisio - Castelnaudary (full remote)',
+            information: 'Developpement d\'application Web cartographique basé sur un framework interne : FeathersJs, VueJs/Quasar, MongoDb'
+        },
+        3:{
+            date:'2023 - 2024',
+            title: 'Developpeur Fullstack',
+            location: 'Internet Factory - Guyancourt (full remote)',
+            information: 'Conception developpement d\'application métier SEO, MCO d\'application web, prototypage projet interne en Python, PHP Symfony et VueJs'
+        },
+        4:{
+            date:'2014 - 2023',
+            title: 'Developpeur Fullstack',
+            location: 'Aldeis Yooda - Vendargues',
+            information: 'Développement d\'application web (microservices, frontend, infrastructure) en PHP Symfony et VueJs Scrap / Data mining et gestion BDD (MariaDb, PostgreSql, Cassandra)'
+        },
+        5:{
+            date:'2009 - 2014',
+            title: 'Developpeur Backend',
+            location: 'Adapt Informatique - Juvignac',
+            information: 'Développement d\'application desktop / mobile en Windev, Maintenance et création d\'outils backoffice en PHP / JS'
+        }
     },
     userEducation: {
         title:'Formation',
-       1:{
-           date:'2006 - 2008',
-           title: 'BTS IG',
-           location: 'Lycée Jean Mermoz - Montpellier',
-           information: 'Informatique de gestion option développeur d\'applications : Spécialisation dans la création et l\'adaptation d\'applications informatiques'
-       },
-       2:{
-           date:'2004 - 2006',
-           title: 'Baccalauréat ACC',
-           location: 'Lycée Jacques Ruffié - Limoux',
-           information: 'Action et Communication Commerciale : Ensemble des techniques basées sur la détermination des besoins et désirs des consommateurs'
-       },
+        1:{
+            date:'2006 - 2008',
+            title: 'BTS IG',
+            location: 'Lycée Jean Mermoz - Montpellier',
+            information: 'Informatique de gestion option développeur d\'applications : Spécialisation dans la création et l\'adaptation d\'applications informatiques'
+        },
+        2:{
+            date:'2004 - 2006',
+            title: 'Baccalauréat ACC',
+            location: 'Lycée Jacques Ruffié - Limoux',
+            information: 'Action et Communication Commerciale : Ensemble des techniques basées sur la détermination des besoins et désirs des consommateurs'
+        },
     },
     portfolio: {
         title:'Portfolio',
         1:{
-           url:'https://meylou.fr',
-           name: 'meylou studio',
-           information: 'Agence de developpement web'
+            url:'https://meylou.fr',
+            name: 'meylou studio',
+            information: 'Agence de developpement web',
+            skills:'<ul><li>Frontend : VueJs</li><li>CI/CD :Docker + Github Action</li></ul>'
         },
         2:{
             url:'https://saint-internet.fr/',
             name: 'saint-internet',
-            information: 'Bénédiction de site web'
+            information: 'Bénédiction de site web',
+            skills:'<ul><li>Frontend : Symfony Twig Taillwindcss</li><li>BDD : Mariadb</li><li>Hebergement client : VPS + déploiement script bash</li></ul>'
         },
         3:{
             url:'https://alcoves-et-dragons.fr',
             name: 'Alcôves & Dragons',
-            information: 'Outil de gestion de session DnD'
+            information: 'Outil de gestion de session DnD',
+            skills:'<ul><li>Frontend public : Symfony</li><li>WebApp : VueJs</li><li>Backend : API Rest Symfony</li><li>CI/CD : Docker + Github Action</li><li>Monitoring : Prometheus + Grafana</li></ul>'
         },
     },
     interest: {

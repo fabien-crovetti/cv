@@ -10,7 +10,7 @@
         <strong class="d-inline-block" style="width: 180px; vertical-align: top">{{ $t('personalInformation.address') }}</strong>
         <span class="d-inline-block" style="width: 180px">10 chemin du moulin 11190 Montazels</span>
     </p>
-    <p class="mt-2"><strong class="d-inline-block" style="width: 180px">{{ $t('personalInformation.email') }}</strong>fcrovetti11@gmail.om</p>
+    <p class="mt-2"><strong class="d-inline-block" style="width: 180px">{{ $t('personalInformation.email') }}</strong>fcrovetti11@gmail.com</p>
 </template>
 
 <style scoped lang="scss">

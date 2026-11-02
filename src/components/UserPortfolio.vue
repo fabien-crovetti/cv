@@ -34,6 +34,8 @@ const portfolioImg = ref([
                 <v-card-item>
                     <a class="text-decoration-none text-primary font-weight-bold d-block" :href="$t(`portfolio.${n}.url`)" target="_blank">{{ $t(`portfolio.${n}.name`) }}</a>
                     <p>{{ $t(`portfolio.${n}.information`) }}</p>
+                    <v-divider class="my-2"/>
+                    <div v-html="$t(`portfolio.${n}.skills`)"/>
                 </v-card-item>
             </v-card>
         </v-col>

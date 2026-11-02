@@ -71,7 +71,7 @@ export default {
     professionalExperiences: {
         title:'Professional experience',
        1:{
-           date:'2025 - today',
+           date:'2025 - 2026',
            title: 'Fullstack Developer',
            location: 'Ypsium - Carcassonne',
            information: 'Development of SaaS tools for road transport and web infrastructure management, maintenance of legacy projects: VueJs, Symfony'
@@ -121,17 +121,20 @@ export default {
         1:{
             url:'https://meylou.fr',
             name: 'meylou studio',
-            information: 'Web development agency'
+            information: 'Web development agency',
+            skills:'<ul><li>Frontend : VueJs</li><li>CI/CD :Docker + Github Action</li></ul>'
         },
         2:{
             url:'https://saint-internet.fr/',
             name: 'saint-internet',
-            information: 'Website Blessing'
+            information: 'Website Blessing',
+            skills:'<ul><li>Frontend : Symfony Twig Taillwindcss</li><li>BDD : Mariadb</li><li>Hosting client : VPS + bash script deployment</li></ul>'
         },
         3:{
             url:'https://alcoves-et-dragons.fr',
             name: 'Alcôves & Dragons',
-            information: 'DnD sessions tool'
+            information: 'DnD sessions tool',
+            skills:'<ul><li>Public Frontend : Symfony</li><li>WebApp : VueJs</li><li>Backend : API Rest Symfony</li><li>CI/CD : Docker + Github Action</li><li>Monitoring : Prometheus + Grafana</li></ul>'
         },
     },
     interest: {
