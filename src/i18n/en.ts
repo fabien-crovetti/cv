@@ -5,7 +5,7 @@ export default {
     },
     "userAbout": {
         "title": "Profile",
-        "text1": "With 17 years of professional experience in web development, I design and enhance business applications, SaaS products and APIs.",
+        "text1": "With 18 years of professional experience in web development, I design and enhance business applications, SaaS products and APIs.",
         "text2": "My background combines backend development with PHP/Symfony and Node.js, Vue.js interfaces, databases and web infrastructure operations.",
         "text3": "I also take over and maintain existing applications, automate deployments and support systems in production.",
         "text4": "I have worked within development teams, including remotely, on SaaS, SEO and mapping applications."

@@ -5,7 +5,7 @@ export default {
     },
     "userAbout": {
         "title": "Profil",
-        "text1": "Développeur web avec 17 ans d’expérience professionnelle, je conçois et fais évoluer des applications métier, des logiciels SaaS et des API.",
+        "text1": "Développeur web avec 18 ans d’expérience professionnelle, je conçois et fais évoluer des applications métier, des logiciels SaaS et des API.",
         "text2": "Mon parcours associe développement backend en PHP/Symfony et Node.js, interfaces Vue.js, bases de données et exploitation d’infrastructures web.",
         "text3": "J’interviens aussi sur la reprise et la maintenance d’applications existantes, l’automatisation des déploiements et le suivi en production.",
         "text4": "J’ai travaillé au sein d’équipes de développement, notamment à distance, dans des contextes SaaS, SEO et cartographiques."
