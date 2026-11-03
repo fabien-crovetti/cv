@@ -140,13 +140,13 @@ export default {
             "url": "https://meylou.fr",
             "name": "Meylou Studio",
             "information": "Mon activité indépendante : création de sites et d’applications, reprise de projets et accompagnement technique.",
-            "skills": "<ul><li>Site vitrine : Vue.js, Tailwind CSS, Vite SSG</li><li>Déploiement : Docker et GitHub Actions</li></ul>"
+            "skills": "<ul><li>Site vitrine : Vue.js, Tailwind CSS, Vite SSG</li><li>Déploiement : VPS + Docker et GitHub Actions</li></ul>"
         },
         "2": {
-            "url": "https://saint-internet.fr/",
-            "name": "saint-internet",
-            "information": "Projet de site web autour de la « bénédiction » de sites internet.",
-            "skills": "<ul><li>Interface : Symfony, Twig et Tailwind CSS</li><li>Base de données : MariaDB</li><li>Hébergement : VPS et déploiement par scripts Bash</li></ul>"
+            "url": "https://pikaudoc.fr/",
+            "name": "Pikaudoc",
+            "information": "Site e-commerce de vente de purée de piment.",
+            "skills": "<ul><li>Wordpress Bedrock</li><li>Base de données : MariaDB</li><li>Déploiement : VPS + Docker et GitHub Actions</li></ul>"
         },
         "3": {
             "url": "https://alcoves-et-dragons.fr",

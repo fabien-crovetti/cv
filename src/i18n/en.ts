@@ -143,10 +143,10 @@ export default {
             "skills": "<ul><li>Business website: Vue.js, Tailwind CSS, Vite SSG</li><li>Deployment: Docker and GitHub Actions</li></ul>"
         },
         "2": {
-            "url": "https://saint-internet.fr/",
-            "name": "saint-internet",
-            "information": "A website project built around the idea of “blessing” websites.",
-            "skills": "<ul><li>Interface: Symfony, Twig and Tailwind CSS</li><li>Database: MariaDB</li><li>Hosting: VPS and deployment using Bash scripts</li></ul>"
+            "url": "https://pikaudoc.fr/",
+            "name": "Pikaudoc",
+            "information": "E-commerce website selling chili pepper paste.",
+            "skills": "<ul><li>WordPress Bedrock</li><li>Database: MariaDB</li><li>Deployment: VPS + Docker and GitHub Actions</li></ul>"
         },
         "3": {
             "url": "https://alcoves-et-dragons.fr",
